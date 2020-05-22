@@ -1,0 +1,102 @@
+.container {
+      height: 520px;
+      background: $color-secundario;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-bottom: 10px double $color-variacion;
+    }
+
+.content {
+    font-family: $Fuente1;
+    text-align: center;
+    font-size: 2em;
+    color: rgba(255,255,255, .8);
+     z-index: 1;
+     height: 100%;
+  }
+
+  h1 {
+      color: $color-claro;
+      font-weight: bold;
+      text-align: center;
+  }
+
+  .content p{
+    color: $color-claro;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Satisfy', cursive;
+    
+  }
+
+ .avatar {
+    display: block;
+    margin: 20px auto 10px;
+    z-index: 4;
+    object-fit: cover;
+    border: 10px double $color-claro;
+    padding: 15px;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: url(waves.png) center bottom no-repeat;
+    animation: 5s wave ease-in-out infinite alternate;
+}
+
+  .waves {
+    position: absolute;
+/*      left: 0;
+    right: 0;
+    height: 200px;
+    bottom: 0;*/
+    bottom: -135px;
+    height: 527px;
+    width: 100%;
+    overflow: hidden;
+  }
+  .wave {
+    position: absolute;
+    left: -180px;
+    bottom: 0;
+    /*width: 200px;*/
+    /*height: 200px;*/
+    /*width: 100%;*/
+    /*border-radius: 50%;*/
+    /*background:rgba(0,0,0, .3);*/
+    width: 2402px;
+    height: 427px;
+    background: url(waves.png) center bottom no-repeat;
+    animation: 5s wave ease-in-out infinite alternate;
+    
+  }
+  .wave.a {
+    background-position: 0 -854px;
+  }
+  .wave.b {
+    background-position: 0 -427px;
+    animation-delay: .6s;
+  }
+  .wave.c {
+    background-position: 0 0;
+    animation-delay: 1.2s;
+  }
+  /*.container {
+    position: absolute;
+  }*/
+  @keyframes wave {
+    0% {
+      transform: translate(0 , 0);
+    }
+    50% {
+      transform: translate(-80px, 30px);
+    }
+    100% {
+      transform: translate(160px, -60px);
+    }
+  }
+
+  
